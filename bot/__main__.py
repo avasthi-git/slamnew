@@ -37,7 +37,8 @@ def stats(update, context):
             f'<b>Download:</b> {recv}\n\n' \
             f'<b>CPU:</b> {cpuUsage}%\n' \
             f'<b>RAM:</b> {memory}%\n' \
-            f'<b>DISK:</b> {disk}%'
+            f'<b>DISK:</b> {disk}%\n' \
+            f'<i>Join @IshanUpdates </i>'
     sendMessage(stats, context.bot, update)
 
 
@@ -47,8 +48,8 @@ This bot can mirror all your links to Google Drive!
 Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
     buttons = button_build.ButtonMaker()
-    buttons.buildbutton("Repo", "https://github.com/breakdowns/slam-mirrorbot")
-    buttons.buildbutton("Support Group", "https://t.me/SlamMirrorSupport")
+    buttons.buildbutton("Group[Waiting Area]", "https://t.me/DragonMirror")
+    buttons.buildbutton("Updates Channel", "https://t.me/IshanUpdates")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     LOGGER.info('UID: {} - UN: {} - MSG: {}'.format(update.message.chat.id, update.message.chat.username, update.message.text))
     uptime = get_readable_time((time.time() - botStartTime))
