@@ -7,7 +7,7 @@
       "telegram",
       "python"
     ],
-    "repository": "https://github.com/breakdowns/slam-mirrorbot",
+    "repository": "https://github.com/avasthi-git/slamnew",
     "website": "https://github.com/breakdowns/slam-mirrorbot",
     "success_url": "https://t.me/SlamMirrorSupport",
     "stack": "container",
@@ -142,6 +142,7 @@
       },
       "IGNORE_PENDING_REQUESTS": {
         "description": "If you want the bot to ignore pending requests after it restarts, set this to True.",
+        "value": "True",
         "required": false
       },
       "SHORTENER": {
@@ -162,7 +163,7 @@
       },
       "VIEW_LINK": {
         "description": "View Link button to open file Index Link in browser instead of direct download link, you can figure out if it's compatible with your Index code or not, open any video from you Index and check if the END of link from browser link bar is ?a=view, if yes make it True it will work (Compatible with Bhadoo Index Code).",
-        "value": "False",
+        "value": "True",
         "required": false
        },
       "BUTTON_FOUR_NAME": {
